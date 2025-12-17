@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+🚀 Project: YouTube Clone with Optimized Features! 🎉
+I've just completed my YouTube Clone project, where I integrated several advanced features using the YouTube API and 
+optimized the app for better performance. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Here are some highlights:
+1. Real-Time Live Search: Implemented a responsive, real-time live search with debouncing on each keystroke to enhance
+user experience and minimize unnecessary API calls.
+2. Live Chat with Auto-Deletion: Added a live chat feature with API polling that automatically deletes chat data, ensuring
+the app stays clean and responsive.
+3. Reddit-Like Nested Comments: Developed a robust nested comments system, similar to Reddit, allowing for better organization
+and interaction within the community.
 
-## Available Scripts
+This project was a fantastic learning experience in app optimization, demonstrating how even small tweaks in API calls can lead
+to significant improvements. Every second saved counts!
 
-In the project directory, you can run:
+# Debouncing:
+    typing slow= 200ms
+    typing fast=30ms
 
-### `npm start`
+   performance:
+        iphone pro max = 14 * 1000 =14000
+        with Debouncing= 3 *1000=3000
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    Debouncing with 200ms
+    -if difference between 2 key strokes is <200ms - Decline API call,
+     200ms - make on API call 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#
+- API call
+- make an api call after every key press 
+  but if the difference between 2 api calls is <200ms
+  decline the api call
 
-### `npm test`
+# cache:
+   time complexity to search in array =O(n)
+   time complexity to search in Object =O(1)
+   
+   [i, ip, iph, iphone]
+   {
+       i:
+       ip:
+       iph:
+       iphone:
+   
+    }
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    newMap();
